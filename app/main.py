@@ -17,3 +17,5 @@ def health_check():
         conexao.execute(text("SELECT 1"))
 
     return {"status": "ok", "database": "connected"}
+
+    #//test: valida inicializacao da api
