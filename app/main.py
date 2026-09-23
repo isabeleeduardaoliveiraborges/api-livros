@@ -1,12 +1,13 @@
 from fastapi import Depends, FastAPI, HTTPException
 from sqlalchemy import select
 from sqlalchemy.orm import Session
+from fastapi.middleware.cors import CORSMiddleware
 
 from app.database import BaseBanco, mecanismo_banco, obter_sessao_banco
 from app.models import Livro
 from app.schemas import LivroCriacao, LivroResposta
 from fastapi.middleware.cors import CORSMiddleware
-@
+
 
 BaseBanco.metadata.create_all(bind=mecanismo_banco)
 
